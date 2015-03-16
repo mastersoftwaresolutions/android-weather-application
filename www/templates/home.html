@@ -1,0 +1,29 @@
+<!-- <ion-view title="Chat App" left-buttons="leftButtons" -->
+<!-- 	right-buttons="rightButtons"> <ion-content has-header="true"> -->
+<!-- <div class="list"> -->
+<!-- 	<label class="item item-input"> <span class="input-label">Username</span> -->
+<!-- 		<input type="text" ng-model="user.username"> -->
+<!-- 	</label> -->
+<!-- </div> -->
+<!-- <div class="padding"> -->
+<!-- 	<button class="button button-block button-positive" ng-click="signIn()"> -->
+<!-- 		Sign-In</button> -->
+<!-- </div> -->
+<!-- </ion-content> </ion-view> -->
+<ion-view title="Chat App" left-buttons="leftButtons"
+	right-buttons="rightButtons"> <ion-content has-header="true">
+<div class="list card">
+
+	<div class="item item-avatar">
+<!-- 		<img src="img/madison1.jpg"> -->
+		<img ng-src="{{icon}}">
+		<h2>{{weather}}</h2>
+		<p>{{description}}</p>
+	</div>
+</div>
+
+<div class="padding">
+	<button class="button button-block button-positive" ng-click="signIn()">
+		Check Weather</button>
+</div>
+</ion-content> </ion-view>
