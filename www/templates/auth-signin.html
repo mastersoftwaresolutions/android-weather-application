@@ -3,32 +3,27 @@
 <h1 class="title">Weather</h1>
 </ion-header-bar>
 <ion-content class="has-header padding">
+
+
 <div class="list-card">
 
-	<div class="item item-avatar transparent">
-		<!-- 		<img src="img/madison1.jpg"> -->
+	<img ng-src="{{icon}}" ng-style="{'height': 20px'}">
 
+	<h2 style="color: #ffffff">{{todaylist.main.temp}}°C</h2>
+	<h2 style="color: #ffffff">Weather: {{todaylist.weather[0].main}}</h2>
+	<ul class="list_vw">
+		<li>Wind: {{todaylist.wind.speed}} m/s</li>
+		<li>Humidity: {{todaylist.main.humidity}} %</li>
+		<li>Sunrise: {{sunrise}}</li>
+		<li>Sunset: {{sunset}}</li>
+	</ul>
 
-
-		<div class="card">
-			<div class="item item-divider">
-				<div class="row">
-					<img ng-src="{{icon}}">
-					<h1>{{todaylist.main.temp}}°C</h1>
-				</div>
-			</div>
-
-		</div>
-		<h2>Weather: {{todaylist.weather[0].main}}</h2>
-		<h2>Wind: {{todaylist.wind.speed}} m/s</h2>
-		<h2>Humidity: {{todaylist.main.humidity}} %</h2>
-		<h2>Sunrise: {{sunrise}}</h2>
-		<h2>Sunset: {{sunset}}</h2>
-
-		<h2>Cloudiness: {{todaylist.weather[0].description}}</h2>
-		<h2>Minimum Temp: {{todaylist.main.temp_min}}°C</h2>
-		<h2>Maximium Temp: {{todaylist.main.temp_max}}°C</h2>
-	</div>
+	<ul class="list_vw sec_vw">
+		<li>Cloudiness: {{todaylist.weather[0].description}}</li>
+		<li>Minimum Temp: {{todaylist.main.temp_min}}°C</li>
+		<li>Maximium Temp: {{todaylist.main.temp_max}}°C</li>
+	</ul>
+</div>
 </div>
 
 

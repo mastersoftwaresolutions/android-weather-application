@@ -1,14 +1,28 @@
 /* Empty. Add your own CSS if you like */
+
+#editLocation {
+	width: 100%;
+	height: 10%;
+}
+
 #map {
 	width: 100%;
-	height: 100%;
+	height: 90%;
 }
 
 .scroll {
 	height: 100%;
 }
 
+.item-avatar.top-cont{border:none}
+.item-avatar.top-cont img{float:left; margin-right:10px; vertical-align:top}
+.item-avatar.top-cont h1{color:#fff;}
 
+ul.list_vw{padding:0; margin:0}
+ul.list_vw li{list-style-type:none; float:left; margin-right:10px; padding-bottom:5px; color:#fff; font-size:16px; width:44%}
+
+ul.list_vw.sec_vw{margin-top:10px; display:inline-block}
+ul.list_vw.sec_vw li{width:100%}
 
 /* .list-card { */
 /* 	background-image: url('../img/ionic.png'); */
